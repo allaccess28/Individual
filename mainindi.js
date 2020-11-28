@@ -129,7 +129,7 @@ function confirmareliminacion(){
 $(document).ready(
     function(){
 
-        $("article").click(
+        $(section).mouseenter(
             function(){
                 $(this).hide(2000);
             }
@@ -137,7 +137,7 @@ $(document).ready(
 
         $("#despliega").click(
             function(){
-                $("p").fadeIn(1000);
+                $(section).fadeIn(1000);
             }
         );
 
