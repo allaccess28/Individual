@@ -129,15 +129,13 @@ function confirmareliminacion(){
 $(document).ready(
     function(){
 
-        $(section).mouseenter(
-            function(){
+        $(".parrafos").click(function(){
                 $(this).hide(2000);
             }
         );
 
-        $("#despliega").click(
-            function(){
-                $(section).fadeIn(1000);
+        $("#despliega").click(function(){
+                $(".parrafos").fadeIn(1000);
             }
         );
 
