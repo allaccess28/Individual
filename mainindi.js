@@ -71,15 +71,17 @@ return true;
 }
 
 function valventa(){
-    var errores="";
-    var id=document.getElementById("txtid");
-    var vendedor=document.getElementById("nomvend");
-    var cantidad=document.getElementById("cantart");
+    var errores = "";
+    var id=document.getElementById("txtid").value;
+    var vendedor=document.getElementById("nomvend").value;
+    var cantidad=document.getElementById("cantart").value;
 
     if (id == null || vendedor == null || cantidad == null || id.length == 0 
-        || vendedor.length == 0 || cantidad.length == 0 ){
-        errores += "Algunos Campos estan sin Datos<br/>";
+    || vendedor.length == 0 || cantidad.length == 0){
+        errores += "Alguno de los campos no tiene datos<br/>";
+        
     }
+
     if (isNaN(id)){
         errores += "El Id no es un Numero <br/>";
     }else{
@@ -97,7 +99,7 @@ function valventa(){
     }else{
         var cantidadnum = parseInt(cantidad);
     if (cantidadnum <= 0 || cantidadnum > 1000){
-         errores += "La cantidad de Articulosno esta dentro del rango<br/<";
+         errores += "La cantidad de Articulosno no esta dentro del rango<br/<";
         }
     }
     if(errores == null || errores == "" || errores.length == 0){
@@ -110,3 +112,4 @@ function valventa(){
 
 
 }
+

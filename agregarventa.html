@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="estilos.css" rel="stylesheet" type="text/css">
-    
+    <script src="mainindi.js" type="text/javascript"></script>
     <title>Agregar Venta</title>
 </head>
 
@@ -21,38 +22,39 @@
                 <li><a href="#">Recetario</a></li>
                 <li><a href="#">Contacto</a></li>
 
-           
+
             </ul>
         </nav>
     </header>
 
-    
 
-    <div id="formventa">
-        <form>
-            <table>
-                <tr>
-                    <th>Id de Venta:</th>
-                    <th><input type="text" name="textid" id="txtid"></th>
-                </tr>
-                <tr>
-                    <th>Nombre Vendedor:</th>
-                    <th><input type="text" name="nomvend" id="nomvend"></th>
-                </tr>
-                <tr>
-                    <th>Cantidad de Articulos:</th>
-                    <th><input type="text" name="cantart" id="cantart"></th>
-                </tr>
-                
-                <tr id="botones">
-                    <th><input type="button" value="Enviar" id="btnenviar" onclick="valventa()"></th>
-                    <th><input type="reset" value="Borrar" name="btnborrar" id="btnborrar"></th>
-                </tr>
-            </table>
-        </form>
-    </div>    
+
+
+    <form id="formventa">
+        <table>
+            <tr>
+                <th>Id de Venta:</th>
+                <th><input type="text" name="txtid" id="txtid"></th>
+            </tr>
+            <tr>
+                <th>Nombre Vendedor:</th>
+                <th><input type="text" name="nomvend" id="nomvend"></th>
+            </tr>
+            <tr>
+                <th>Cantidad de Articulos:</th>
+                <th><input type="text" name="cantart" id="cantart"></th>
+            </tr>
+
+            <tr id="botones">
+                <th><input type="button" value="Enviar" id="btnenviar" onclick="valventa();"></th>
+                <th><input type="reset" value="Borrar" name="btnborrar" id="btnborrar"></th>
+            </tr>
+        </table>
+    </form>
+
 
     <div id="mensaje"></div>
-    <script src="mainindi.js" type="text/javascript"></script>
+  
 </body>
+
 </html>
