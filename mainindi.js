@@ -76,35 +76,36 @@ function valventa(){
     var vendedor=document.getElementById("nomvend");
     var cantidad=document.getElementById("cantart");
 
-    if (id==null|| vendedor==null || cantidad==null|| id.length==0 
-        ||vendedor.length==0 || cantidad.length==0){
-            errores+="Algunos Campos estan sin Datos<br/>";
+    if (id == null || vendedor == null || cantidad == null || id.length == 0 
+        || vendedor.length == 0 || cantidad.length == 0 ){
+        errores += "Algunos Campos estan sin Datos<br/>";
     }
     if (isNaN(id)){
-        errores+="El Id no es un Numero <br/>";
+        errores += "El Id no es un Numero <br/>";
     }else{
-        var idnum=parseInt(id);
-        if(idnum<=0 || idnum>1000){
-            errores+="El identificador no esta dentro del rango esperado<br/>";
+        var idnum = parseInt(id);
+    if( idnum <= 0 || idnum > 1000 ) {
+       errores += "El identificador no esta dentro del rango esperado<br/>";
         }
     }
-    if (vendedor.length>50){
-        errores+="El nombre del Vendedor tiene mas de 50 caracteres<br/>";
-    }
+    if ( vendedor.length > 50){
+        errores += "El nombre del Vendedor tiene mas de 50 caracteres<br/>";
+        }
     if(isNaN(cantidad)){
-        errores+="La cantidad no es un numero<br/>";
+        errores += "La cantidad no es un numero<br/>";
 
     }else{
-        var cantidadnum= parseInt(cantidad);
-        if (cantidadnum<=0 || cantidadnum>1000){
-            errores+="La cantidad de Articulosno esta dentro del rango<br/<";
+        var cantidadnum = parseInt(cantidad);
+    if (cantidadnum <= 0 || cantidadnum > 1000){
+         errores += "La cantidad de Articulosno esta dentro del rango<br/<";
         }
     }
-    if(errores==null || errores=="" || errores.length ==0){
-        errores="Validado";
+    if(errores == null || errores == "" || errores.length == 0){
+        errores = "Validado";
     }
+    
     var divmensaje = document.getElementById("mensaje");
-    divmensaje.innerHTML=errores;
+    divmensaje.innerHTML = errores;
 
 
 

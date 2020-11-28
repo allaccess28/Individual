@@ -116,6 +116,10 @@ aside{
     list-style: none;
     text-align: center;
 }
+#mensaje{
+    float: inline-start;
+    padding-top: 200px;
+}
 
 /* For mobile phones: */
 [class*="col-"] {

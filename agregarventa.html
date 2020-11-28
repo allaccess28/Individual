@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="estilos.css" rel="stylesheet" type="text/css">
-    <script src="mainindi.js" type="text/javascript"></script>
+    
     <title>Agregar Venta</title>
 </head>
 
@@ -26,10 +26,10 @@
         </nav>
     </header>
 
-    <div id="mensaje"></div>
+    
 
     <div id="formventa">
-        <form action="" >
+        <form>
             <table>
                 <tr>
                     <th>Id de Venta:</th>
@@ -45,13 +45,14 @@
                 </tr>
                 
                 <tr id="botones">
-                    <th><input type="button" value="Enviar" id="btnenviar" onclick="valventa();"></th>
+                    <th><input type="button" value="Enviar" id="btnenviar" onclick="valventa()"></th>
                     <th><input type="reset" value="Borrar" name="btnborrar" id="btnborrar"></th>
                 </tr>
             </table>
         </form>
     </div>    
 
-    
+    <div id="mensaje"></div>
+    <script src="mainindi.js" type="text/javascript"></script>
 </body>
 </html>
