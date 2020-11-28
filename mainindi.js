@@ -125,3 +125,21 @@ function confirmareliminacion(){
   }
   alert(txt);
 }
+/* funcion jquery ejercicio ind 13 modulo 3*/
+$(document).ready(
+    function(){
+
+        $("article").click(
+            function(){
+                $(this).hide(2000);
+            }
+        );
+
+        $("#despliega").click(
+            function(){
+                $("p").fadeIn(1000);
+            }
+        );
+
+    }
+);
