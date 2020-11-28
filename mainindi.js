@@ -1,3 +1,4 @@
+/*funcion para ejercicio undividual 7 modulo 3*/
 function validacion(){
     valor = document.getElementById("usuarioform").value;
     valor2= document.getElementById("passwordform").value;
@@ -19,7 +20,7 @@ function validacion(){
     }
     return true;
 }
-
+/*funcion para ejercicio undividual 8 modulo 3*/
 function validacion2(){
     valor= document.getElementById("Nombre").value;
     valor2= document.getElementById("Apellidos").value;
@@ -69,7 +70,7 @@ else if ( /^\+\d{2,3}\s\d{9}$/.test(valor4))  {
 alert("Cliente Ingresado")
 return true;
 }
-
+/*funcion para ejercicio undividual 9 modulo 3*/
 function valventa(){
     var errores = "";
     var id=document.getElementById("txtid").value;
@@ -112,4 +113,15 @@ function valventa(){
 
 
 }
-
+/*funcion para ejercicio undividual 10 modulo 3*/
+function confirmareliminacion(){
+    var txt;
+  if (confirm("¿Esta seguro de eliminar?")) {
+    txt = "Eliminado";
+    
+  } else {
+    txt = "Has cancelado la eliminacion";
+    
+  }
+  alert(txt);
+}
