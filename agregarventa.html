@@ -26,27 +26,31 @@
         </nav>
     </header>
 
-    <form action="" class="info" id="formcliente">
-        <table>
-            <tr>
-                <th>Id de Venta:</th>
-                <th><input type="text" name="textid" id="txtid"></th>
-            </tr>
-            <tr>
-                <th>Nombre Vendedor:</th>
-                <th><input type="text" name="nomvend" id="nomvend"></th>
-            </tr>
-            <tr>
-                <th>Cantidad de Articulos:</th>
-                <th><input type="text" name="cantart" id="cantart"></th>
-            </tr>
-            <tr>
-                <th><input type="submit" name="btnenviar" id="btnenviar"></th>
-                <th><input type="reset" name="btnborrar" id="btnborrar"></th>
-            </tr>
-        </table>
-    </form>
+    <div id="mensaje"></div>
 
+    <div id="formventa">
+        <form action="" >
+            <table>
+                <tr>
+                    <th>Id de Venta:</th>
+                    <th><input type="text" name="textid" id="txtid"></th>
+                </tr>
+                <tr>
+                    <th>Nombre Vendedor:</th>
+                    <th><input type="text" name="nomvend" id="nomvend"></th>
+                </tr>
+                <tr>
+                    <th>Cantidad de Articulos:</th>
+                    <th><input type="text" name="cantart" id="cantart"></th>
+                </tr>
+                
+                <tr id="botones">
+                    <th><input type="button" value="Enviar" id="btnenviar" onclick="valventa();"></th>
+                    <th><input type="reset" value="Borrar" name="btnborrar" id="btnborrar"></th>
+                </tr>
+            </table>
+        </form>
+    </div>    
 
     
 </body>
