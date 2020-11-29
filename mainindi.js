@@ -127,9 +127,14 @@ function confirmareliminacion(){
 }
 /* funcion jquery ejercicio ind 13 modulo 3*/
 $(document).ready(function () {
-    $('section article .parrafos').click(function(){
-        $('.parrafos').fadeOut(500);
+    $('.parrafos').click(function(){
+        $(this).fadeOut(500);
 
     }
+    );
+    $("#despliega").click(
+        function(){
+            $('.parrafos').fadeIn(1000);
+        }
     );
 });
