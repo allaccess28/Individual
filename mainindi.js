@@ -138,3 +138,22 @@ $(document).ready(function () {
         }
     );
 });
+/* funcion ejercicio ind 14 mod 3*/
+$(document).ready(function () {
+    $('#botoncrear').click(
+        function(){
+            var lista="";
+
+            if($('#detallecant').val()==""){
+                alert("Hay campos vacios")
+
+            }else{
+                lista+=($("#tipoventa").val()+ " "+ $("#detallecant").val()+ " " + $("#productoventa").val());
+                $("#textolista").append(lista );
+                
+            }
+        } 
+    );
+});
+
+/* $("#textolista").append */

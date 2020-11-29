@@ -26,29 +26,31 @@
         </nav>
     </header>
 
-    <form action="">
-        <select name="Tipo de Venta" id="">
-            <option value="Delivery"></option>
-            <option value="Banqueteria"></option>
-            <option value="Workshop"></option>
+    <form action="submit" class="formventa">
+        <select name="Tipo de Venta" id="tipoventa" >
+            <option value="Delivery">Delivery</option>
+            <option value="Banqueteria">Banqueteria</option>
+            <option value="Workshop">Workshop</option>
             
         </select>
-        <select name="Producto" id="">
-            <option value="Canasta verduras p/p"></option>
-            <option value="Canasta de frutos p/p"></option>
-            <option value="Pedido Verduras Mensual 4 pers"></option>
-            <option value="Pedido Frutas Mensual 4 pers"></option>
-            <option value="Evento 15 personas"></option>
-            <option value="Evento 50 personas"></option>
-            <option value="Evento 100 personas"></option>
-            <option value="Clases 20 personas"></option>
-            <option value="Clases 50 personas"></option>
+        <select name="Producto" id="productoventa" >
+            <option value="Canasta verduras p/p">Canasta verduras p/p</option>
+            <option value="Canasta de frutos p/p">Canasta de frutos p/p</option>
+            <option value="Pedido Verduras Mensual 4 pers">Pedido Verduras Mensual 4 pers</option>
+            <option value="Pedido Frutas Mensual 4 pers">Pedido Frutas Mensual 4 pers</option>
+            <option value="Evento 15 personas">Evento 15 personas</option>
+            <option value="Evento 50 personas">Evento 50 personas</option>
+            <option value="Evento 100 personas">Evento 100 personas</option>
+            <option value="Clases 20 personas">Clases 20 personas</option>
+            <option value="Clases 50 personas">Clases 50 personas</option>
 
         </select>
         <input type="number" name="cantidad" id="detallecant">
-        <input type="button" value="Registrar">
+        <input type="button" value="Registrar" id="botoncrear">
 
     </form>
+
+    <p id="textolista"></p><br>
 
 
     
