@@ -25,6 +25,12 @@ header{
 .info{
     padding-top: 150px;
 }
+.footers{
+    font-style: none;
+    text-align: center;
+    background-color: gray;
+    justify-content: center;
+}
 
 h1{
     font-family: Arial,'Helvetica Neue', sans-serif, sans-serif;
