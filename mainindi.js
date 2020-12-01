@@ -157,3 +157,7 @@ $(document).ready(function () {
 });
 
 /* $("#textolista").append */
+
+$(document).ready( function () {
+    $('#tablaventas').DataTable();
+} );

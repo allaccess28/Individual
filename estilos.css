@@ -118,10 +118,11 @@ aside{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
-#listaventas {
+#tablaventas {
     
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: rgb(0, 0, 0);
 }
 
 #botones{
