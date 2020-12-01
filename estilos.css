@@ -1,5 +1,6 @@
 body{
     margin: 0 auto;
+    
     text-align: center;
     background-color: #2DBDBA;
     padding-left: 25px;
@@ -117,12 +118,14 @@ aside{
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    
 }
 #tablaventas {
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: small;
     color: rgb(0, 0, 0);
+    padding-top: 90px;
 }
 
 #botones{
