@@ -224,9 +224,17 @@ $(document).ready(function () {
         
     });
    
-    
+    $("#txtfechagen").datepicker(
+        {dateFormat: "yy-mm-dd"}
+    );
+
+    $("#txtfechapago").datepicker(
+        {dateFormat: "yy-mm-dd"}
+    );
+
 
 
     
 });
+
 

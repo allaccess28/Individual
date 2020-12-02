@@ -8,7 +8,7 @@ body{
 
 }
 #margencentrado{
-    padding-top: 15%;
+    padding-top: 30%;
 }
 * {
     box-sizing: border-box;
@@ -157,8 +157,8 @@ aside{
 input.error,
 select.error,
 textarea.error {
-    border: 2px solid rgba(255, 0, 0, 0.637);
-    font-family: cursive;
+    border: 2px solid rgba(255, 153, 0, 0.678);
+   
 }
 
 
