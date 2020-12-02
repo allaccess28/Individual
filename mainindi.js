@@ -137,9 +137,6 @@ $(document).ready(function () {
             $('.parrafos').fadeIn(1000);
         }
     );
-});
-/* funcion ejercicio ind 14 mod 3*/
-$(document).ready(function () {
     $('#botoncrear').click(
         function(){
             var lista="";
@@ -154,14 +151,6 @@ $(document).ready(function () {
             }
         } 
     );
+    $('#tablaventas').DataTable();
 });
-
-/* $("#textolista").append */
-
-$(document).ready( function () {
-    $('#tablaventas').DataTable(
-        {
-            scrolly:400
-        }
-    );
-} );
+/* funcion ejercicio ind 14 mod 3*/

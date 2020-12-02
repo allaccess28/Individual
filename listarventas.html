@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <h1>La Papa Guapa</h1></br>
+       <h1>La Papa Guapa</h1></br>
         <h3 id="subtitulo">Verduleria y Naturismo</h3>
 
         <nav class="menu">
@@ -29,68 +29,70 @@
         </nav>
     </header>
     
-    <table class="" id="tablaventas">
-        <tr>
+    <table  class="display" style="width:100% margin-top:" id="tablaventas">
+        <thead>
+            <tr>
+                
+                <th scope="row">ID Venta </th>
+                <th>Vendedor</th>
+                <th>Subtotal</th>
+                <th>Impuesto</th>
+                <th>Total</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>001</td>
+                <td>Jose Martinez</td>
+                <td>3000</td>
+                <td>300</td>
+                <td>3300</td>
+                <td><input type="button" value="Eliminar Venta" onclick="confirmareliminacion()"></td>
+                <td><input type="button" value="Agregar a Venta" ></td>
+            </tr>
+                
+        
             
-            <th scope="row">ID Venta </th>
-            <th>Vendedor</th>
-            <th>Subtotal</th>
-            <th>Impuesto</th>
-            <th>Total</th>
-        </tr>
-        <br>
-        <tr>
-            <td>001</td>
-            <td>Jose Martinez</td>
-            <td>3000</td>
-            <td>300</td>
-            <td>3300</td>
-            <td><input type="button" value="Eliminar Venta" onclick="confirmareliminacion()"></td>
-            <td><input type="button" value="Agregar a Venta" ></td>
-        </tr>
+            <tr>
+                <td>002</td>
+                <td>Vania gutierrez</td>
+                <td>4500</td>
+                <td>450</td>
+                <td>4950</td>
+                <td><input type="button" value="Eliminar Venta" onclick="confirmareliminacion()"></td>
+                <td><input type="button" value="Agregar a Venta" ></td>
+            </tr>
+        
+            <tr>
+                <td>003</td>
+                <td>Jose Martinez</td>
+                <td>10600</td>
+                <td>1060</td>
+                <td>11660</td>
+                <td><input type="button" value="Eliminar Venta" onclick="confirmareliminacion()"></td>
+                <td><input type="button" value="Agregar a Venta" ></td>
+            </tr>
             
-    
-        <br>
-        <tr>
-            <td>002</td>
-            <td>Vania gutierrez</td>
-            <td>4500</td>
-            <td>450</td>
-            <td>4950</td>
-            <td><input type="button" value="Eliminar Venta" onclick="confirmareliminacion()"></td>
-            <td><input type="button" value="Agregar a Venta" ></td>
-        </tr>
-        <br>
-        <tr>
-            <td>003</td>
-            <td>Jose Martinez</td>
-            <td>10600</td>
-            <td>1060</td>
-            <td>11660</td>
-            <td><input type="button" value="Eliminar Venta" onclick="confirmareliminacion()"></td>
-            <td><input type="button" value="Agregar a Venta" ></td>
-        </tr>
-        <br>
-        <tr>
-            <td>004</td>
-            <td>Jose Martinez</td>
-            <td>6000</td>
-            <td>600</td>
-            <td>6600</td>
-            <td><input type="button" value="Eliminar Venta" onclick="confirmareliminacion()"></td>
-            <td><input type="button" value="Agregar a Venta" ></td>
-        </tr>
-        <br>
-        <tr>
-            <td>005</td>
-            <td>Vania Gutierrez</td>
-            <td>11000</td>
-            <td>1000</td>
-            <td>12000</td>
-            <td><input type="button" value="Eliminar Venta" onclick="confirmareliminacion()"></td>
-            <td><input type="button" value="Agregar a Venta" ></td>
-        </tr>
-
+            <tr>
+                <td>004</td>
+                <td>Jose Martinez</td>
+                <td>6000</td>
+                <td>600</td>
+                <td>6600</td>
+                <td><input type="button" value="Eliminar Venta" onclick="confirmareliminacion()"></td>
+                <td><input type="button" value="Agregar a Venta" ></td>
+            </tr>
+            
+            <tr>
+                <td>005</td>
+                <td>Vania Gutierrez</td>
+                <td>11000</td>
+                <td>1000</td>
+                <td>12000</td>
+                <td><input type="button" value="Eliminar Venta" onclick="confirmareliminacion()"></td>
+                <td><input type="button" value="Agregar a Venta" ></td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
