@@ -151,6 +151,47 @@ $(document).ready(function () {
             }
         } 
     );
-    $('#tablaventas').DataTable();
+    $('#tablaventas').DataTable();/* funcion ejercicio ind 14 mod 3*/
+
+     /* funcion Validar Ejercicio Individual 19 mod 3*/
+     $("#formfactura").validate({
+        alert("")
+        rules: {
+            txtidfact: {
+                required: true,
+                min: 1,
+                max: 10000
+            },
+            txtidventa: {
+                required: true,
+                min: 1,
+                max: 1000
+            },
+            txtfechagen:{
+                required: true
+            }
+        },
+        messages: {
+            txtidfact: {
+                required: "Ingrese el ID de factura",
+                min: "Debe ser un número mayor o igual a 1",
+                max: "Debe ser un número menor a 10000"
+            },
+            txtidventa: {
+                required: "Ingrese el ID de venta",
+                min: "Debe ser un número mayor o igual a 1",
+                max: "Debe ser un número menor a 1000"
+            },
+            txtfechagen: {
+                required: "Debe indicar una fecha de generación"
+            }
+        }
+    });
+
+    $("#txtfechagen").datepicker(
+        {dateFormat: "yy-mm-dd"}
+    );
 });
-/* funcion ejercicio ind 14 mod 3*/
+
+
+
