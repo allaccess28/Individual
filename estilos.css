@@ -157,7 +157,8 @@ aside{
 input.error,
 select.error,
 textarea.error {
-    border: 3px solid red;
+    border: 2px solid rgba(255, 0, 0, 0.637);
+    font-family: cursive;
 }
 
 

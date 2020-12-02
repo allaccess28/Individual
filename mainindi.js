@@ -153,11 +153,12 @@ $(document).ready(function () {
     );
     $('#tablaventas').DataTable();/* funcion ejercicio ind 14 mod 3*/
 
-    /* funcion Validar Ejercicio Individual 19 mod 3*/
+    
 
 });
-
+/* funcion Validar Ejercicio Individual 19 mod 3*/
 $(document).ready(function () {
+    
     $("#formfactura").validate({
 
     rules: {
@@ -178,13 +179,16 @@ $(document).ready(function () {
                 required: true
             },
             txtsubtotal: {
-                required: true
+                required: true,
+                number:true
             },
             txtimpuesto: {
-                required: true
+                required: true,
+                number:true
             },
             txttotal: {
-                required: true
+                required: true,
+                number:true
             }
         },
         messages: {
@@ -205,18 +209,22 @@ $(document).ready(function () {
                 required: "Debe indicar una fecha de pago"
             },
             txtsubtotal: {
-                required: "Debe indicar un subtotal"
+                required: "Debe indicar un subtotal",
+                number:"Debe ingresar un Numero"
             },
             txtimpuesto: {
-                required: "Debe indicar un impuesto"
+                required: "Debe indicar un impuesto",
+                number:"Debe ingresar un numero"
             },
             txttotal: {
-                required: "Debe indicar un total"
+                required: "Debe indicar un total",
+                number:"Debe ingresar un Numero"
             }
         }
+        
     });
+   
     
-
 
 
     
