@@ -231,10 +231,16 @@ $(document).ready(function () {
     $("#txtfechapago").datepicker(
         {dateFormat: "yy-mm-dd"}
     );
-
-
-
     
 });
+$( function() {
+    $( "#resizable" ).resizable();
+    
+  } );
 
+$( function() {
+    $( ".accordion" ).accordion({
+      collapsible: true
+    });
+  } ); 
 

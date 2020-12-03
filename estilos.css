@@ -161,7 +161,18 @@ textarea.error {
    
 }
 
+/* estilo para resizable individual 20*/
+#resizable { 
+    width: 150px; height: 150px; padding: 0.5em; 
+}
+#resizable h3 { 
+      text-align: center; margin: 0; 
+    }
 
+.parrafoacordeon{
+    font-style: italic;
+    color: green;
+}    
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
