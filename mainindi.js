@@ -151,10 +151,13 @@ $(document).ready(function () {
             }
         }
     );
-    $('#tablaventas').DataTable();/* funcion ejercicio ind 14 mod 3*/
+    
 
     
 
+});
+$(document).ready(function () {
+    $('#tablaventas').DataTable();/* funcion ejercicio ind 14 mod 3*/
 });
 /* funcion Validar Ejercicio Individual 19 mod 3*/
 $(document).ready(function () {
